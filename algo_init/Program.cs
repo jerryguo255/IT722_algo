@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
-namespace algo_init
+namespace Lab01_adjacency_list_for_graph
 {
     class Program
     {
@@ -15,7 +15,7 @@ namespace algo_init
             {
                 vertexes.Add(new Vertex(i));
             }
-            // 0 1 2
+            // init the List of Vertex  
 
 
             string input = Console.ReadLine();
@@ -26,7 +26,7 @@ namespace algo_init
 
 
            // TextReader stdin = Console.In;
-            //Console.SetIn(new StreamReader("text.txt"));
+           // Console.SetIn(new StreamReader("text.txt"));
             while (vertId != -1 && neiId != -1)
             {
                 vertexes[vertId].Addneighbour(vertexes[neiId]);

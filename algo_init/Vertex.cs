@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace algo_init
+namespace Lab01_adjacency_list_for_graph
 {
     class Vertex : IComparable<Vertex>
     {

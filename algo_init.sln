@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "algo_init", "algo_init\algo_init.csproj", "{71EC5CD0-9860-4D46-8341-FE8F32AC9CE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab01_adjacency_list_for_graph", "algo_init\Lab01_adjacency_list_for_graph.csproj", "{71EC5CD0-9860-4D46-8341-FE8F32AC9CE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
