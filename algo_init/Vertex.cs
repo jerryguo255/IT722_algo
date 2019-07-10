@@ -15,23 +15,28 @@ namespace Lab01_adjacency_list_for_graph
             this.Id = Id;
         }
 
-        public void Addneighbour(Vertex nbr) {
-            adj.Add(nbr);
+        public void Addneighbour(Vertex nbr)
+        {
+            if (!adj.Contains(nbr))
+            {
+                adj.Add(nbr);
+            }
             adj.Sort();
         }
 
-        public override string ToString() {    
+        public override string ToString()
+        {
             string neig = null;
             foreach (var item in adj)
             {
                 neig += " " + item.Id.ToString();
             }
-            return string.Format("{0}:{1}", Id,neig);
+            return string.Format("{0}:{1}", Id, neig);
         }
 
         public override bool Equals(object obj)
         {
-           Vertex other= obj as Vertex;
+            Vertex other = obj as Vertex;
             return this.Id == other.Id;
         }
 

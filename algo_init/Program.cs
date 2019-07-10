@@ -30,7 +30,7 @@ namespace Lab01_adjacency_list_for_graph
             while (vertId != -1 && neiId != -1)
             {
                 vertexes[vertId].Addneighbour(vertexes[neiId]);
-
+                vertexes[neiId].Addneighbour(vertexes[vertId]);//无向图
                 //Vertex vNei = new Vertex(neiId);
                 ////Vertex v0 = new Vertex(0);
                 ////vertexes.Add(v0);
@@ -41,11 +41,11 @@ namespace Lab01_adjacency_list_for_graph
                 //        item.Addneighbour(vNei);
                 //    }
                 //}
-                
 
 
 
-               // Vertex vNei = new Vertex(neiId);
+
+                // Vertex vNei = new Vertex(neiId);
 
 
                 input = Console.ReadLine();
