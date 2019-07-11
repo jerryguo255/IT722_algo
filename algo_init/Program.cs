@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Threading;
+
 namespace Lab01_adjacency_list_for_graph
 {
     class Program
     {
         static void Main(string[] args)
         {
+            StreamReader stdin = new StreamReader("test.txt");
+            Console.SetIn(stdin);
+            // ---- 
+
             int vertexNum = int.Parse(Console.ReadLine());
 
             List<Vertex> vertexes = new List<Vertex>();
@@ -17,35 +23,21 @@ namespace Lab01_adjacency_list_for_graph
             }
             // init the List of Vertex  
 
+            
 
             string input = Console.ReadLine();
             // Regex.Split(s,"")
             string[] words = input.Split(' ');
-            int vertId = int.Parse(words[0]);//本体
-            int neiId = int.Parse(words[1]); //邻居
+            int vertId = int.Parse(words[0]);
+            int neiId = int.Parse(words[1]);
 
 
-           // TextReader stdin = Console.In;
-           // Console.SetIn(new StreamReader("text.txt"));
+
+
             while (vertId != -1 && neiId != -1)
             {
                 vertexes[vertId].Addneighbour(vertexes[neiId]);
-                vertexes[neiId].Addneighbour(vertexes[vertId]);//无向图
-                //Vertex vNei = new Vertex(neiId);
-                ////Vertex v0 = new Vertex(0);
-                ////vertexes.Add(v0);
-                //foreach (var item in vertexes) //0 1 ， 1 0
-                //{
-                //    if (item.Id == vertId)  // 0 1 2
-                //    {
-                //        item.Addneighbour(vNei);
-                //    }
-                //}
-
-
-
-
-                // Vertex vNei = new Vertex(neiId);
+                vertexes[neiId].Addneighbour(vertexes[vertId]); 
 
 
                 input = Console.ReadLine();
@@ -58,9 +50,24 @@ namespace Lab01_adjacency_list_for_graph
             {
                 Console.WriteLine(item);
             }
-            
 
-            Console.ReadLine();
+
+            //----------------- standard input with TXT file-------
+            //Console.WriteLine("Started");
+
+            //StreamReader stdin = new StreamReader("test.txt");
+            //Console.SetIn(stdin);
+            //string name =  Console.ReadLine();
+            //while (name != "#")
+            //{
+            //    Console.WriteLine(name);
+            //    name = Console.ReadLine();
+            //    Thread.Sleep(1111);
+            //}
+            //----------------- standard input with TXT file-------
+
+
+            Console.ReadKey();
         }
     }
 }
