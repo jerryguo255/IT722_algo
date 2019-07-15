@@ -12,12 +12,11 @@ namespace TopologicalSort
         static void Main(string[] args)
         {
 
-            List<VertexforToplog> vertexList = new List<VertexforToplog>();
             List<VertexforToplog> sortedList = new List<VertexforToplog>();
-            //1 create a target list%%
+            //1 create a target list
 
-            // StreamReader stdin = new StreamReader("..\\..\\topologicalSort.txt");
-            // Console.SetIn(stdin);//standard input from txt file
+           // StreamReader stdin = new StreamReader("..\\..\\topologicalSort.txt");
+           // Console.SetIn(stdin);//standard input from txt file
 
 
             //2 init empty vertex list (number of vertex)
@@ -64,16 +63,18 @@ namespace TopologicalSort
                             startList[i].adj[0].IncomingEdge--;//set the neib's vertex to 0
                             //if (startList[i].adj.Count != 0)  //if the vertex has a neib
                             //{
+
                             //}
+
                         }
-                        vertexList.Add(startList[i]);         //add the vertex to sorted list
+                        sortedList.Add(startList[i]);         //add the vertex to sorted list
                         startList.RemoveAt(i);        //remove the vertex from origin list
                     }
                 }
             }
             // print out the sorted list
 
-            foreach (var item in vertexList)
+            foreach (var item in sortedList)
             {
                 Console.WriteLine(item);
             }
