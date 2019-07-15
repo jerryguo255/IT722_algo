@@ -10,7 +10,7 @@ namespace Lab01_adjacency_list_for_graph
     {
         static void Main(string[] args)
         {
-            StreamReader stdin = new StreamReader("test.txt");
+            StreamReader stdin = new StreamReader("..\\..\\test.txt");
             Console.SetIn(stdin);
             // ---- 
 

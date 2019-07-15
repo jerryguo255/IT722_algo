@@ -6,7 +6,6 @@ namespace Lab01_adjacency_list_for_graph
     class Vertex : IComparable<Vertex>
     {
         public int Id { get; set; }
-        public int IncomingEdge { get; set; }
 
         public List<Vertex> adj = new List<Vertex>();  //相邻元素的ID
 
@@ -21,7 +20,7 @@ namespace Lab01_adjacency_list_for_graph
             {
                 adj.Add(nbr);
             }
-            adj.Sort();
+           // adj.Sort();
         }
 
         public override string ToString()
