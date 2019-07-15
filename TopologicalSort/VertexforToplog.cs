@@ -11,12 +11,13 @@ namespace TopologicalSort
 
         public List<VertexforToplog> adj = new List<VertexforToplog>();  //相邻元素的ID
 
-        public VertexforToplog(string Data)
+        public VertexforToplog(string Data, int Id)
         {
             this.Data = Data;
+            this.Id = Id;
         }
 
-        public void Addneighbour(VertexforToplog nbr)
+        public void Addneighbour(VertexforToplog nbr )
         {
             if (!adj.Contains(nbr))
             {
@@ -27,7 +28,7 @@ namespace TopologicalSort
 
         public override string ToString()
         {
-            return Data;
+            return string.Format("ID:{1}  Data:{0} ", Data,Id);
         }
 
         //public override bool Equals(object obj)
