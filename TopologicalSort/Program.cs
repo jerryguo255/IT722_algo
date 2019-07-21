@@ -15,13 +15,14 @@ namespace TopologicalSort
             List<VertexforToplog> sortedList = new List<VertexforToplog>();
             //1 create a target list
             List<VertexforToplog> startList = new List<VertexforToplog>();
+            //2 create a startlist for processing
             StreamReader stdin = new StreamReader("..\\..\\courses.txt");
             Console.SetIn(stdin);//standard input from txt file
 
 
 
 
-            //2 init empty vertex list (number of vertex)
+            //3 init empty vertex list (number of vertex)
             int vertexNum = int.Parse(Console.ReadLine());// get the number of tasks  :3
             List<VertexforToplog> vertexList = new List<VertexforToplog>();
             for (int i = 0; i < vertexNum; i++)
@@ -29,10 +30,10 @@ namespace TopologicalSort
                 vertexList.Add(new VertexforToplog(Console.ReadLine(), i));
                 //add data  0:go  1:ready  2:set
             }
-            //2 End
+            //3 End
 
             string input = Console.ReadLine();
-            //3 load des pairs
+            //4 load des pairs in to vertexlist
             while (input != null)
             {
                 string[] words = input.Split(' ');
@@ -43,65 +44,37 @@ namespace TopologicalSort
                 input = Console.ReadLine();
             }
 
-
+            // when vertexlist has an vertex
             while (vertexList.Count != 0)
             {
                 for (int i = 0; i < vertexList.Count; i++)
-                {
-                    if (vertexList[i].IncomingEdge == 0)
+                { // traverse list  find all vertex that it's incomingEdge is 0, add to StartList
+                    if (vertexList[i].IncomingEdge == 0) //if the vertex's IncomingEdge is 0
                     {
-                        startList.Add(vertexList[i]);
-                        vertexList.Remove(vertexList[i]);
+                        startList.Add(vertexList[i]);  // add to start list
+                        vertexList.Remove(vertexList[i]); //remove from vertexList
                     }
                 }
 
-                Process0VertexAtStartList();
-
-
-            }
-
-
-
-            void Process0VertexAtStartList()
-            {
                 foreach (var item in startList.ToList())
-                {
-                    //if (item.adjs.Count==0)
-                    //{
-                    foreach (VertexforToplog adj in item.adjs.ToList())
+                {//process the startList
+                    foreach (VertexforToplog adj in item.adjs)
                     {
                         adj.IncomingEdge--;
                     }
-                    //}
-
-
                     startList.Remove(item);
                     sortedList.Add(item);
                 }
             }
 
-            //while (vertexList.Count != 0)
-            //{
-            //    for (int i = 0; i < vertexList.Count; i++)
-            //    {
-            //        if (vertexList[i].IncomingEdge == 0)//if the vertex's incomeEdge
-            //        {
-            //            if (vertexList[i].adjs.Count != 0)  //if the vertex has a neib
-            //            {
-            //                vertexList[i].adjs[0].IncomingEdge = 0;//set the neib's vertex to 0
-            //            }
-            //            sortedList.Add(vertexList[i]);         //add the vertex to sorted list
-            //            vertexList.RemoveAt(i);        //remove the vertex from origin list
-            //        }
-            //    }
-            //}
-            //// print out the sorted list
-
+        
             foreach (var item in sortedList)
             {
                 Console.WriteLine(item);
             }
             Console.ReadKey();
         }
+
+
     }
 }
