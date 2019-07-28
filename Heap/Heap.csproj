@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E9DA0C82-B5CF-4D79-81FA-0194627E0483}</ProjectGuid>
+    <ProjectGuid>{11138F9D-0F6F-4E49-BE7E-2A156DD7035B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TraversingGraph_01_ShortestPath</RootNamespace>
-    <AssemblyName>TraversingGraph_01_ShortestPath</AssemblyName>
+    <RootNamespace>Heap</RootNamespace>
+    <AssemblyName>Heap</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VertexForTG01.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

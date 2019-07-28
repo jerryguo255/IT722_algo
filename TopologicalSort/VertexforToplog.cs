@@ -28,7 +28,7 @@ namespace TopologicalSort
 
         public override string ToString()
         {
-            return string.Format("ID:{1}  Data:{0} IncomeEdge:{2} ", Data,Id,IncomingEdge);
+            return string.Format( Data);
         }
 
         //public override bool Equals(object obj)
