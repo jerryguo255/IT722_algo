@@ -16,7 +16,7 @@ namespace TopologicalSort
             //1 create a target list
             List<VertexforToplog> startList = new List<VertexforToplog>();
             //2 create a startlist for processing
-          //  StreamReader stdin = new StreamReader("..\\..\\rsg.txt");
+           // StreamReader stdin = new StreamReader("..\\..\\rsg.txt");
           //  Console.SetIn(stdin);//standard input from txt file
 
 
