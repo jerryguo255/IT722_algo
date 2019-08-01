@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab01_adjacency_list_for_gr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopologicalSort", "TopologicalSort\TopologicalSort.csproj", "{BED2E520-7B04-4709-BA31-63C89197947A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraversingGraph_BFS", "TraversingGraph_BFS\TraversingGraph_BFS.csproj", "{E9DA0C82-B5CF-4D79-81FA-0194627E0483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap", "Heap\Heap.csproj", "{11138F9D-0F6F-4E49-BE7E-2A156DD7035B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightedGraphs_01_WeightedAdjacencyList", "WeightedGraphs_01_WeightedAdjacencyList\WeightedGraphs_01_WeightedAdjacencyList.csproj", "{29DEA79D-9EF6-4EFC-88B5-FB6B374D761E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraversingGraph_DFS", "TraversingGraph_DFS\TraversingGraph_DFS.csproj", "{6B054DC7-4F9C-4D45-AC82-FC9B272A3AD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimsMST", "PrimsMST\PrimsMST.csproj", "{38078114-2434-4095-8118-56650EF1ABCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +31,26 @@ Global
 		{BED2E520-7B04-4709-BA31-63C89197947A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BED2E520-7B04-4709-BA31-63C89197947A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BED2E520-7B04-4709-BA31-63C89197947A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9DA0C82-B5CF-4D79-81FA-0194627E0483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9DA0C82-B5CF-4D79-81FA-0194627E0483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9DA0C82-B5CF-4D79-81FA-0194627E0483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9DA0C82-B5CF-4D79-81FA-0194627E0483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11138F9D-0F6F-4E49-BE7E-2A156DD7035B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11138F9D-0F6F-4E49-BE7E-2A156DD7035B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11138F9D-0F6F-4E49-BE7E-2A156DD7035B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11138F9D-0F6F-4E49-BE7E-2A156DD7035B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29DEA79D-9EF6-4EFC-88B5-FB6B374D761E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29DEA79D-9EF6-4EFC-88B5-FB6B374D761E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29DEA79D-9EF6-4EFC-88B5-FB6B374D761E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29DEA79D-9EF6-4EFC-88B5-FB6B374D761E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B054DC7-4F9C-4D45-AC82-FC9B272A3AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B054DC7-4F9C-4D45-AC82-FC9B272A3AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B054DC7-4F9C-4D45-AC82-FC9B272A3AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B054DC7-4F9C-4D45-AC82-FC9B272A3AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38078114-2434-4095-8118-56650EF1ABCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38078114-2434-4095-8118-56650EF1ABCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38078114-2434-4095-8118-56650EF1ABCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38078114-2434-4095-8118-56650EF1ABCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

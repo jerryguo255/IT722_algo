@@ -1,0 +1,8 @@
+1 Adj List
+2 Topology Sort
+3 Shortest Path
+4 Maze 1
+5 Components
+6 Sailors Secret
+7 BiColoring
+8 Weighted Adj

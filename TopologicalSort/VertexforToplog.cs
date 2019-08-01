@@ -9,25 +9,26 @@ namespace TopologicalSort
         public string Data { get; set; }
         public int IncomingEdge { get; set; }
 
-        public List<VertexforToplog> adj = new List<VertexforToplog>();  //相邻元素的ID
+        public List<VertexforToplog> adjs = new List<VertexforToplog>();  //相邻元素的ID
 
-        public VertexforToplog(string Data)
+        public VertexforToplog(string Data, int Id)
         {
             this.Data = Data;
+            this.Id = Id;
         }
 
-        public void Addneighbour(VertexforToplog nbr)
+        public void Addneighbour(VertexforToplog nbr )
         {
-            if (!adj.Contains(nbr))
+            if (!adjs.Contains(nbr))
             {
-                adj.Add(nbr);
+                adjs.Add(nbr);
             }
-            //adj.Sort();
+            //adjs.Sort();
         }
 
         public override string ToString()
         {
-            return Data;
+            return string.Format( Data);
         }
 
         //public override bool Equals(object obj)
