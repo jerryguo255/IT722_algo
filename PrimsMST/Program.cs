@@ -51,7 +51,8 @@ namespace PrimsMST
             var LoadedList = p.CreateNLoad_WeightedVertex();
 
             Console.WriteLine(p.Cal_LeastCostViaPrimsMST(LoadedList));
-            Console.ReadKey();
+            Console.ReadLine();
+          //  Console.ReadKey();
         }
 
 
@@ -91,8 +92,8 @@ namespace PrimsMST
 
         List<WeightedVertexForPMST> CreateNLoad_WeightedVertex()
         {
-            StreamReader stdin = new StreamReader("..\\..\\input.txt");
-            Console.SetIn(stdin);//standard input from txt file
+           // StreamReader stdin = new StreamReader("..\\..\\input.txt");
+           // Console.SetIn(stdin);//standard input from txt file
             string input = Console.ReadLine();
             string[] words = input.Split(' ');
             int VertexNum = int.Parse(words[0]);//get the number of Vertex

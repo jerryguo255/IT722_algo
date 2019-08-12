@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraversingGraph_DFS", "Trav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimsMST", "PrimsMST\PrimsMST.csproj", "{38078114-2434-4095-8118-56650EF1ABCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijkstraMST", "DijkstraMST\DijkstraMST.csproj", "{0F7BA541-57A5-4524-B089-7405C7E28298}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{38078114-2434-4095-8118-56650EF1ABCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38078114-2434-4095-8118-56650EF1ABCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38078114-2434-4095-8118-56650EF1ABCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7BA541-57A5-4524-B089-7405C7E28298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7BA541-57A5-4524-B089-7405C7E28298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7BA541-57A5-4524-B089-7405C7E28298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7BA541-57A5-4524-B089-7405C7E28298}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
